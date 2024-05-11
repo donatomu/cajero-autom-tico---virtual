@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/index-estilos.css">
+</head>
+<body>
+    <div class="card">
+        <h2 class="mensaje">!BIENVENIDO A TU CAJERO AUTOMATICO DEV.F.¡</h2>
+        <form action="caja.html">
+            <label for="nombre">USUARIO</label>
+            <select id="nombre">
+                <option value="" disabled selected>Seleccione un usuario</option>
+            </select>
+            <label for="contraseña">CONTRASEÑA</label>
+            <input type="password" id="contraseña" required>
+            <button type="button" id="botonIngresar" onclick="ingresar()">INGRESAR</button>
+            <div id="mensaje-error" class="mensaje-error"></div>
+            <div id="mensaje-pase" class="mensaje-pase"></div>
+        </form>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
